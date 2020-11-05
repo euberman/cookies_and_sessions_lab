@@ -1,0 +1,25 @@
+<h1>Product Search</h1>
+<!--
+<%= form_tag ({controller: 'products', action: 'add', method: 'post'}) do %>
+  <input name='product'>
+  <input type=submit value='add to cart'>
+<% end %>
+-->
+<%= form_tag ({controller: 'products', action: 'add', method: 'post'}) do %>
+  <label>Product:</label><br>
+  <%= text_field_tag :'product' %><br>
+
+  <%= submit_tag "Add to Cart" %>
+<% end %>
+<br>
+<h1>Current Cart Items:</h1>
+<!-- 
+<br>
+<div>
+  <ul>
+    <%= cart.each do |item| %>
+      <li><%= item %></li>
+    <% end %>
+  </ul>
+</div>
+-->
